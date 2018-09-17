@@ -99,7 +99,7 @@ public class JPushModule extends ReactContextBaseJavaModule {
     public void initPush() {
         mContext = getCurrentActivity();
         JPushInterface.init(getReactApplicationContext());
-        Logger.toast(mContext, "Init push success");
+        //Logger.toast(mContext, "Init push success");
         Logger.i(TAG, "init Success!");
     }
 
@@ -124,7 +124,7 @@ public class JPushModule extends ReactContextBaseJavaModule {
         mContext = getCurrentActivity();
         JPushInterface.stopPush(getReactApplicationContext());
         Logger.i(TAG, "Stop push");
-        Logger.toast(mContext, "Stop push success");
+        //Logger.toast(mContext, "Stop push success");
     }
 
     @ReactMethod
@@ -132,7 +132,7 @@ public class JPushModule extends ReactContextBaseJavaModule {
         mContext = getCurrentActivity();
         JPushInterface.resumePush(getReactApplicationContext());
         Logger.i(TAG, "Resume push");
-        Logger.toast(mContext, "Resume push success");
+        //Logger.toast(mContext, "Resume push success");
     }
 
     @ReactMethod
